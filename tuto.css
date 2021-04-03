@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+#background{
+    background: url('../img/nature.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.typewrite{
+    
+    color: pink;
+   
+    /* position: absolute;
+    top: 40%;
+    left: 30%; */
+}
+.typing::after{
+    content: "";
+    
+    position: absolute;
+    right: -5px;
+    height: 80%;
+    width: 1px;
+    border-right: 4px solid blue;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink {
+    0%{
+        opacity: 0;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#section-a{
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
